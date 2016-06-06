@@ -51,6 +51,7 @@ public class WikiFetcher {
 		String slash = File.separator;
 		String dirname = System.getProperty("user.dir") + slash + 
 				"src" + slash + "resources" + slash + realURL.getHost();
+		System.out.println("dirname: " + dirname);
 
 		// read the file
 		File input = new File(dirname, realURL.getPath());
